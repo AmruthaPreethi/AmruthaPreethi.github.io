@@ -109,14 +109,6 @@
   .hero-photo::after{content:""; position:absolute; inset:0; border-radius:22px; box-shadow:inset 0 0 0 1px rgba(124,116,255,0.3);}
   .hero-photo::before{content:""; position:absolute; top:16px; right:16px; z-index:2; width:9px; height:9px; border-radius:50%; background:var(--teal); box-shadow:0 0 0 5px rgba(45,212,191,0.18);}
 
-  /* marquee domains */
-  .marquee-wrap{border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; padding:22px 0; background:var(--surface);}
-  .marquee-track{display:flex; gap:52px; white-space:nowrap; width:max-content; animation:scroll-left 26s linear infinite;}
-  @keyframes scroll-left{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
-  .marquee-track span{font-family:'Space Grotesk',sans-serif; font-size:15px; color:var(--ink-faint); display:inline-flex; align-items:center; gap:14px;}
-  .marquee-track span b{color:var(--ink); font-weight:600;}
-  .marquee-track span::after{content:"◆"; color:var(--indigo); font-size:9px; margin-left:14px;}
-
   /* ABOUT */
   .about-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:64px;}
   @media (max-width:840px){ .about-grid{grid-template-columns:1fr; gap:40px;} }
@@ -294,7 +286,7 @@
     </div>
     <div class="hero-inner">
       <div>
-        <h1 class="load-in d2">Hey, I'm <span class="accent">Doradla Amrutha<br>Preethi</span></h1>
+        <h1 class="load-in d2"><span class="accent">Doradla Amrutha<br>Preethi</span></h1>
         <p class="tagline load-in d3">Building intelligent applications with machine learning, data analytics, and full-stack web development.</p>
         <p class="lede load-in d4">Third-year B.Tech (AI &amp; ML) student who ships end-to-end — from training a model to deploying it behind a working web app. Two internships in, spanning AI/ML fundamentals and Power BI analytics.</p>
         <div class="hero-actions load-in d5">
@@ -310,19 +302,6 @@
       </div>
     </div>
   </section>
-
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span><b>#01</b> Machine Learning &amp; AI</span>
-      <span><b>#02</b> Full-Stack Development</span>
-      <span><b>#03</b> Data Analytics &amp; BI</span>
-      <span><b>#04</b> Quantum-Classical ML</span>
-      <span><b>#01</b> Machine Learning &amp; AI</span>
-      <span><b>#02</b> Full-Stack Development</span>
-      <span><b>#03</b> Data Analytics &amp; BI</span>
-      <span><b>#04</b> Quantum-Classical ML</span>
-    </div>
-  </div>
 
   <section id="about" class="wrap reveal">
     <p class="eyebrow">About Me</p>
@@ -549,8 +528,8 @@
       <div>
         <h4 class="mono" style="font-size:12px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.06em; margin-bottom:14px;">Professional Certifications</h4>
         <ul class="cert-list">
-          <li>Oracle Cloud Infrastructure 2025 Certified Data Science Professional</li>
-          <li>Oracle Cloud Infrastructure 2025 Certified APEX Cloud Developer</li>
+          <li><b>Oracle Cloud Infrastructure 2025 Certified Data Science Professional</b></li>
+          <li><b>Oracle Cloud Infrastructure 2025 Certified APEX Cloud Developer</b></li>
         </ul>
       </div>
     </div>
